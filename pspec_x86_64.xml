@@ -1,0 +1,50 @@
+<PISI>
+    <Source>
+        <Name>diorite</Name>
+        <Packager>
+            <Name>Stefan Ric</Name>
+            <Email>stfric369@gmail.com</Email>
+        </Packager>
+        <License>Apache-1.1</License>
+        <PartOf>programming</PartOf>
+        <Summary xml:lang="en">Utility and widget library for Nuvola Player.</Summary>
+        <Description xml:lang="en">Diorite library is a utility and widget library for Nuvola Player project based on GLib, GIO and GTK.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>diorite</Name>
+        <Summary xml:lang="en">Utility and widget library for Nuvola Player.</Summary>
+        <Description xml:lang="en">Diorite library is a utility and widget library for Nuvola Player project based on GLib, GIO and GTK.
+</Description>
+        <PartOf>programming</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>diorite-devel</Name>
+        <Summary xml:lang="en">Development files for diorite</Summary>
+        <Description xml:lang="en">Diorite library is a utility and widget library for Nuvola Player project based on GLib, GIO and GTK.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">diorite</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib/lib*.so</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/*.pc</Path>
+            <Path fileType="data">/usr/share/vala*/vapi/*</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-05-25</Date>
+            <Version>0.2.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Stefan Ric</Name>
+            <Email>stfric369@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
