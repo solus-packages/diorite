@@ -2,10 +2,10 @@
     <Source>
         <Name>diorite</Name>
         <Packager>
-            <Name>Stefan Ric</Name>
-            <Email>stfric369@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
-        <License>Apache-1.1</License>
+        <License>BSD-2-Clause</License>
         <PartOf>programming</PartOf>
         <Summary xml:lang="en">Utility and widget library for Nuvola Player.</Summary>
         <Description xml:lang="en">Diorite library is a utility and widget library for Nuvola Player project based on GLib, GIO and GTK.
@@ -33,18 +33,18 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
-            <Path fileType="library">/usr/lib/lib*.so</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/*.pc</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
             <Path fileType="data">/usr/share/vala*/vapi/*</Path>
         </Files>
     </Package>
     <History>
         <Update release="1">
-            <Date>2016-05-25</Date>
+            <Date>2016-05-26</Date>
             <Version>0.2.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Stefan Ric</Name>
-            <Email>stfric369@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>

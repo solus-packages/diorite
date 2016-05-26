@@ -13,8 +13,9 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(python-2.7)
     - pkgconfig(vapigen)
+    - vala
 setup      : |
-    ./waf configure --prefix=/usr
+    ./waf configure --prefix=/usr --libdir=%libdir% --mandir=/usr/share/man
 build      : |
     ./waf build
 install    : |
