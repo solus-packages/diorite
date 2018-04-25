@@ -1,8 +1,8 @@
 name       : diorite
-version    : 0.2.1
-release    : 1
+version    : 4.10.0
+release    : 2
 source     :
-    - https://github.com/tiliado/diorite/archive/0.2.1.tar.gz : 188335b58e7fea03e81c89d6f2bb1694063bac34483de05ee1e600e1cf696dd0
+    - git|https://github.com/tiliado/diorite.git : a02cf3f55a9ad67f561c116d27f36ceeb36bbaa7
 license    : BSD-2-Clause
 component  : programming
 summary    : Utility and widget library for Nuvola Player.
@@ -12,8 +12,9 @@ builddeps  :
     - pkgconfig(glib-2.0)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(python-2.7)
-    - pkgconfig(vapigen)
-    - vala
+    - pkgconfig(sqlite3)
+    - pyparsing
+    - valadoc
 setup      : |
     ./waf configure --prefix=/usr --libdir=%libdir% --mandir=/usr/share/man
 build      : |
